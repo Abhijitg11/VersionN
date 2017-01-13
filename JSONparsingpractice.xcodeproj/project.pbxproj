@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		E69462B21E27AD820041F701 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E69462B11E27AD820041F701 /* main.m */; };
 		E69462B51E27AD820041F701 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E69462B41E27AD820041F701 /* AppDelegate.m */; };
-		E69462B81E27AD820041F701 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69462B71E27AD820041F701 /* ViewController.m */; };
 		E69462BB1E27AD820041F701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69462B91E27AD820041F701 /* Main.storyboard */; };
 		E69462BE1E27AD820041F701 /* JSONparsingpractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E69462BC1E27AD820041F701 /* JSONparsingpractice.xcdatamodeld */; };
 		E69462C01E27AD820041F701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E69462BF1E27AD820041F701 /* Assets.xcassets */; };
 		E69462C31E27AD820041F701 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69462C11E27AD820041F701 /* LaunchScreen.storyboard */; };
 		E69462CE1E27AD820041F701 /* JSONparsingpracticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E69462CD1E27AD820041F701 /* JSONparsingpracticeTests.m */; };
 		E69462D91E27AD820041F701 /* JSONparsingpracticeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E69462D81E27AD820041F701 /* JSONparsingpracticeUITests.m */; };
+		E69462E81E27ADBF0041F701 /* TableViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = E69462E71E27ADBF0041F701 /* TableViewController1.m */; };
+		E69462EB1E27AE400041F701 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = E69462EA1E27AE400041F701 /* ViewController2.m */; };
+		E69462EE1E27AE730041F701 /* issue.m in Sources */ = {isa = PBXBuildFile; fileRef = E69462ED1E27AE730041F701 /* issue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +42,6 @@
 		E69462B11E27AD820041F701 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E69462B31E27AD820041F701 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E69462B41E27AD820041F701 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E69462B61E27AD820041F701 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E69462B71E27AD820041F701 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E69462BA1E27AD820041F701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E69462BD1E27AD820041F701 /* JSONparsingpractice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JSONparsingpractice.xcdatamodel; sourceTree = "<group>"; };
 		E69462BF1E27AD820041F701 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +53,12 @@
 		E69462D41E27AD820041F701 /* JSONparsingpracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONparsingpracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E69462D81E27AD820041F701 /* JSONparsingpracticeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONparsingpracticeUITests.m; sourceTree = "<group>"; };
 		E69462DA1E27AD820041F701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E69462E61E27ADBF0041F701 /* TableViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController1.h; sourceTree = "<group>"; };
+		E69462E71E27ADBF0041F701 /* TableViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController1.m; sourceTree = "<group>"; };
+		E69462E91E27AE400041F701 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		E69462EA1E27AE400041F701 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		E69462EC1E27AE730041F701 /* issue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = issue.h; sourceTree = "<group>"; };
+		E69462ED1E27AE730041F701 /* issue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = issue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +111,12 @@
 			children = (
 				E69462B31E27AD820041F701 /* AppDelegate.h */,
 				E69462B41E27AD820041F701 /* AppDelegate.m */,
-				E69462B61E27AD820041F701 /* ViewController.h */,
-				E69462B71E27AD820041F701 /* ViewController.m */,
+				E69462E61E27ADBF0041F701 /* TableViewController1.h */,
+				E69462EC1E27AE730041F701 /* issue.h */,
+				E69462ED1E27AE730041F701 /* issue.m */,
+				E69462E71E27ADBF0041F701 /* TableViewController1.m */,
+				E69462E91E27AE400041F701 /* ViewController2.h */,
+				E69462EA1E27AE400041F701 /* ViewController2.m */,
 				E69462B91E27AD820041F701 /* Main.storyboard */,
 				E69462BF1E27AD820041F701 /* Assets.xcassets */,
 				E69462C11E27AD820041F701 /* LaunchScreen.storyboard */,
@@ -273,8 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E69462B81E27AD820041F701 /* ViewController.m in Sources */,
 				E69462B51E27AD820041F701 /* AppDelegate.m in Sources */,
+				E69462E81E27ADBF0041F701 /* TableViewController1.m in Sources */,
+				E69462EB1E27AE400041F701 /* ViewController2.m in Sources */,
+				E69462EE1E27AE730041F701 /* issue.m in Sources */,
 				E69462BE1E27AD820041F701 /* JSONparsingpractice.xcdatamodeld in Sources */,
 				E69462B21E27AD820041F701 /* main.m in Sources */,
 			);
