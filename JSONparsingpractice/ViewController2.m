@@ -38,4 +38,10 @@
 }
 */
 
+- (IBAction)switc:(id)sender {
+    if([sender isOn])
+    {
+        
+    }
+}
 @end

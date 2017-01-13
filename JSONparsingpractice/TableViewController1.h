@@ -12,5 +12,6 @@
 @interface TableViewController1 : UITableViewController
 @property(nonatomic,retain)NSMutableArray *arr;
 @property(nonatomic,retain)issue *i1;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
 
 @end

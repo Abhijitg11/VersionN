@@ -10,7 +10,6 @@
 		E69462B21E27AD820041F701 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E69462B11E27AD820041F701 /* main.m */; };
 		E69462B51E27AD820041F701 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E69462B41E27AD820041F701 /* AppDelegate.m */; };
 		E69462BB1E27AD820041F701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69462B91E27AD820041F701 /* Main.storyboard */; };
-		E69462BE1E27AD820041F701 /* JSONparsingpractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E69462BC1E27AD820041F701 /* JSONparsingpractice.xcdatamodeld */; };
 		E69462C01E27AD820041F701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E69462BF1E27AD820041F701 /* Assets.xcassets */; };
 		E69462C31E27AD820041F701 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69462C11E27AD820041F701 /* LaunchScreen.storyboard */; };
 		E69462CE1E27AD820041F701 /* JSONparsingpracticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E69462CD1E27AD820041F701 /* JSONparsingpracticeTests.m */; };
@@ -43,7 +42,6 @@
 		E69462B31E27AD820041F701 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E69462B41E27AD820041F701 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E69462BA1E27AD820041F701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E69462BD1E27AD820041F701 /* JSONparsingpractice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JSONparsingpractice.xcdatamodel; sourceTree = "<group>"; };
 		E69462BF1E27AD820041F701 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E69462C21E27AD820041F701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E69462C41E27AD820041F701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,17 +109,12 @@
 			children = (
 				E69462B31E27AD820041F701 /* AppDelegate.h */,
 				E69462B41E27AD820041F701 /* AppDelegate.m */,
-				E69462E61E27ADBF0041F701 /* TableViewController1.h */,
-				E69462EC1E27AE730041F701 /* issue.h */,
-				E69462ED1E27AE730041F701 /* issue.m */,
-				E69462E71E27ADBF0041F701 /* TableViewController1.m */,
-				E69462E91E27AE400041F701 /* ViewController2.h */,
-				E69462EA1E27AE400041F701 /* ViewController2.m */,
+				E6A8D7A41E29089600D72425 /* First Viewcontroller */,
+				E6A8D7A51E2908CB00D72425 /* Second view controller */,
 				E69462B91E27AD820041F701 /* Main.storyboard */,
 				E69462BF1E27AD820041F701 /* Assets.xcassets */,
 				E69462C11E27AD820041F701 /* LaunchScreen.storyboard */,
 				E69462C41E27AD820041F701 /* Info.plist */,
-				E69462BC1E27AD820041F701 /* JSONparsingpractice.xcdatamodeld */,
 				E69462B01E27AD820041F701 /* Supporting Files */,
 			);
 			path = JSONparsingpractice;
@@ -151,6 +144,34 @@
 				E69462DA1E27AD820041F701 /* Info.plist */,
 			);
 			path = JSONparsingpracticeUITests;
+			sourceTree = "<group>";
+		};
+		E6A8D7A41E29089600D72425 /* First Viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				E69462E61E27ADBF0041F701 /* TableViewController1.h */,
+				E69462E71E27ADBF0041F701 /* TableViewController1.m */,
+				E6A8D7A61E29091300D72425 /* object for issue */,
+			);
+			name = "First Viewcontroller";
+			sourceTree = "<group>";
+		};
+		E6A8D7A51E2908CB00D72425 /* Second view controller */ = {
+			isa = PBXGroup;
+			children = (
+				E69462E91E27AE400041F701 /* ViewController2.h */,
+				E69462EA1E27AE400041F701 /* ViewController2.m */,
+			);
+			name = "Second view controller";
+			sourceTree = "<group>";
+		};
+		E6A8D7A61E29091300D72425 /* object for issue */ = {
+			isa = PBXGroup;
+			children = (
+				E69462EC1E27AE730041F701 /* issue.h */,
+				E69462ED1E27AE730041F701 /* issue.m */,
+			);
+			name = "object for issue";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,7 +308,6 @@
 				E69462E81E27ADBF0041F701 /* TableViewController1.m in Sources */,
 				E69462EB1E27AE400041F701 /* ViewController2.m in Sources */,
 				E69462EE1E27AE730041F701 /* issue.m in Sources */,
-				E69462BE1E27AD820041F701 /* JSONparsingpractice.xcdatamodeld in Sources */,
 				E69462B21E27AD820041F701 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +534,7 @@
 				E69462DF1E27AD820041F701 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E69462E01E27AD820041F701 /* Build configuration list for PBXNativeTarget "JSONparsingpracticeTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +543,7 @@
 				E69462E21E27AD820041F701 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E69462E31E27AD820041F701 /* Build configuration list for PBXNativeTarget "JSONparsingpracticeUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,21 +552,9 @@
 				E69462E51E27AD820041F701 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		E69462BC1E27AD820041F701 /* JSONparsingpractice.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				E69462BD1E27AD820041F701 /* JSONparsingpractice.xcdatamodel */,
-			);
-			currentVersion = E69462BD1E27AD820041F701 /* JSONparsingpractice.xcdatamodel */;
-			path = JSONparsingpractice.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = E69462A51E27AD810041F701 /* Project object */;
 }

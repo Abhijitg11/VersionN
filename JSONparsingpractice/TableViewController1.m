@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //[_indicator startAnimating];
     _arr=[[NSMutableArray alloc]init];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     NSString *str=@"https://api.github.com/repos/crashlytics/secureudid/issues";
@@ -35,7 +36,7 @@
             _i1.body=[dict objectForKey:@"body"];
                 NSDictionary *dict1=[dict objectForKey:@"user"];
             _i1.login=[dict1 objectForKey:@"login"];
-            
+            _i1.profile=[dict1 objectForKey:@"html_url"];
             
             
             
@@ -47,7 +48,7 @@
     }];
 
     [task resume];
-    
+   // [_indicator stopAnimating];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -124,7 +125,7 @@
     issue *temp2=[_arr objectAtIndex:ip.row];
     controller.tempstring=temp2.body;
     controller.tempstring1=temp2.login;
-    
+    controller.tempstring2=temp2.profile;
     NSLog(@"%@",temp2.body);
     
     }
