@@ -2,18 +2,17 @@
 //  ViewController2.h
 //  JSONparsingpractice
 //
-//  Created by Student-004 on 12/01/17.
+//  Created by Student-004 on 14/01/17.
 //  Copyright © 2017 abhijit. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "customsecondTableViewCell.h"
+#import "comments.h"
 
-@interface ViewController2 : UIViewController
-@property(nonatomic,retain)NSString *tempstring,*tempstring1,*tempstring2;
-//@property (weak, nonatomic) IBOutlet UILabel *lbl;
-//@property (weak, nonatomic) IBOutlet UILabel *lbl1;
-@property (weak, nonatomic) IBOutlet UILabel *lblnew;
-@property (weak, nonatomic) IBOutlet UILabel *lbllogin;
-- (IBAction)switc:(id)sender;
+@interface ViewController2 : UITableViewController
+@property(nonatomic,retain)NSString *tempstring;
+@property(nonatomic,retain)NSMutableArray *arr2;
+@property(nonatomic,retain)comments *c1;
 
 @end

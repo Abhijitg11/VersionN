@@ -18,9 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //[_indicator startAnimating];
-    _arr=[[NSMutableArray alloc]init];
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+       _arr=[[NSMutableArray alloc]init];
     NSString *str=@"https://api.github.com/repos/crashlytics/secureudid/issues";
     NSURL *url=[NSURL URLWithString:str];
     NSMutableURLRequest *request=[NSMutableURLRequest requestWithURL:url];
@@ -34,11 +32,7 @@
             _i1=[[issue alloc]init];
             _i1.title=[dict objectForKey:@"title"];
             _i1.body=[dict objectForKey:@"body"];
-                NSDictionary *dict1=[dict objectForKey:@"user"];
-            _i1.login=[dict1 objectForKey:@"login"];
-            _i1.profile=[dict1 objectForKey:@"html_url"];
-            
-            
+            _i1.commentsapi=[dict objectForKey:@"comments_url"];
             
             [_arr addObject:_i1];
             
@@ -48,8 +42,9 @@
     }];
 
     [task resume];
-   // [_indicator stopAnimating];
-}
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"customfirstTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
+    }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -70,10 +65,10 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    customfirstTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     issue *temp1=[_arr objectAtIndex:indexPath.row];
-    cell.textLabel.text=temp1.title;
-    
+    cell.issuetitlelbl.text=temp1.title;
+    cell.issuebodylbl.text=temp1.body;
     
     return cell;
 }
@@ -123,12 +118,15 @@
     NSIndexPath *ip=[self.tableView indexPathForSelectedRow];
     
     issue *temp2=[_arr objectAtIndex:ip.row];
-    controller.tempstring=temp2.body;
-    controller.tempstring1=temp2.login;
-    controller.tempstring2=temp2.profile;
-    NSLog(@"%@",temp2.body);
-    
+    controller.tempstring=temp2.commentsapi;
+      NSLog(@"%@",temp2.body);
+        NSLog(@"%@",temp2.commentsapi);
     }
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 300;
+    
 }
 
 @end

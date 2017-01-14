@@ -15,8 +15,13 @@
 		E69462CE1E27AD820041F701 /* JSONparsingpracticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E69462CD1E27AD820041F701 /* JSONparsingpracticeTests.m */; };
 		E69462D91E27AD820041F701 /* JSONparsingpracticeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E69462D81E27AD820041F701 /* JSONparsingpracticeUITests.m */; };
 		E69462E81E27ADBF0041F701 /* TableViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = E69462E71E27ADBF0041F701 /* TableViewController1.m */; };
-		E69462EB1E27AE400041F701 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = E69462EA1E27AE400041F701 /* ViewController2.m */; };
 		E69462EE1E27AE730041F701 /* issue.m in Sources */ = {isa = PBXBuildFile; fileRef = E69462ED1E27AE730041F701 /* issue.m */; };
+		E6D5C7221E2A389C002F5BA5 /* customfirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D5C7201E2A389C002F5BA5 /* customfirstTableViewCell.m */; };
+		E6D5C7231E2A389C002F5BA5 /* customfirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6D5C7211E2A389C002F5BA5 /* customfirstTableViewCell.xib */; };
+		E6D5C7261E2A41AF002F5BA5 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D5C7251E2A41AF002F5BA5 /* ViewController2.m */; };
+		E6D5C7291E2A47F1002F5BA5 /* comments.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D5C7281E2A47F1002F5BA5 /* comments.m */; };
+		E6D5C72F1E2A4BD3002F5BA5 /* customsecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D5C72D1E2A4BD3002F5BA5 /* customsecondTableViewCell.m */; };
+		E6D5C7301E2A4BD3002F5BA5 /* customsecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6D5C72E1E2A4BD3002F5BA5 /* customsecondTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +58,18 @@
 		E69462DA1E27AD820041F701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E69462E61E27ADBF0041F701 /* TableViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController1.h; sourceTree = "<group>"; };
 		E69462E71E27ADBF0041F701 /* TableViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController1.m; sourceTree = "<group>"; };
-		E69462E91E27AE400041F701 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
-		E69462EA1E27AE400041F701 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		E69462EC1E27AE730041F701 /* issue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = issue.h; sourceTree = "<group>"; };
 		E69462ED1E27AE730041F701 /* issue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = issue.m; sourceTree = "<group>"; };
+		E6D5C71F1E2A389C002F5BA5 /* customfirstTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customfirstTableViewCell.h; sourceTree = "<group>"; };
+		E6D5C7201E2A389C002F5BA5 /* customfirstTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customfirstTableViewCell.m; sourceTree = "<group>"; };
+		E6D5C7211E2A389C002F5BA5 /* customfirstTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customfirstTableViewCell.xib; sourceTree = "<group>"; };
+		E6D5C7241E2A41AF002F5BA5 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		E6D5C7251E2A41AF002F5BA5 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		E6D5C7271E2A47F1002F5BA5 /* comments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comments.h; sourceTree = "<group>"; };
+		E6D5C7281E2A47F1002F5BA5 /* comments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = comments.m; sourceTree = "<group>"; };
+		E6D5C72C1E2A4BD3002F5BA5 /* customsecondTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customsecondTableViewCell.h; sourceTree = "<group>"; };
+		E6D5C72D1E2A4BD3002F5BA5 /* customsecondTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customsecondTableViewCell.m; sourceTree = "<group>"; };
+		E6D5C72E1E2A4BD3002F5BA5 /* customsecondTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customsecondTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +164,7 @@
 			children = (
 				E69462E61E27ADBF0041F701 /* TableViewController1.h */,
 				E69462E71E27ADBF0041F701 /* TableViewController1.m */,
+				E6D5C72B1E2A4B67002F5BA5 /* customtableviewcell1 */,
 				E6A8D7A61E29091300D72425 /* object for issue */,
 			);
 			name = "First Viewcontroller";
@@ -159,8 +173,10 @@
 		E6A8D7A51E2908CB00D72425 /* Second view controller */ = {
 			isa = PBXGroup;
 			children = (
-				E69462E91E27AE400041F701 /* ViewController2.h */,
-				E69462EA1E27AE400041F701 /* ViewController2.m */,
+				E6D5C7241E2A41AF002F5BA5 /* ViewController2.h */,
+				E6D5C7251E2A41AF002F5BA5 /* ViewController2.m */,
+				E6D5C7311E2A4BE8002F5BA5 /* customtableviewcell2 */,
+				E6D5C72A1E2A4879002F5BA5 /* object for comments */,
 			);
 			name = "Second view controller";
 			sourceTree = "<group>";
@@ -172,6 +188,35 @@
 				E69462ED1E27AE730041F701 /* issue.m */,
 			);
 			name = "object for issue";
+			sourceTree = "<group>";
+		};
+		E6D5C72A1E2A4879002F5BA5 /* object for comments */ = {
+			isa = PBXGroup;
+			children = (
+				E6D5C7271E2A47F1002F5BA5 /* comments.h */,
+				E6D5C7281E2A47F1002F5BA5 /* comments.m */,
+			);
+			name = "object for comments";
+			sourceTree = "<group>";
+		};
+		E6D5C72B1E2A4B67002F5BA5 /* customtableviewcell1 */ = {
+			isa = PBXGroup;
+			children = (
+				E6D5C71F1E2A389C002F5BA5 /* customfirstTableViewCell.h */,
+				E6D5C7201E2A389C002F5BA5 /* customfirstTableViewCell.m */,
+				E6D5C7211E2A389C002F5BA5 /* customfirstTableViewCell.xib */,
+			);
+			name = customtableviewcell1;
+			sourceTree = "<group>";
+		};
+		E6D5C7311E2A4BE8002F5BA5 /* customtableviewcell2 */ = {
+			isa = PBXGroup;
+			children = (
+				E6D5C72C1E2A4BD3002F5BA5 /* customsecondTableViewCell.h */,
+				E6D5C72D1E2A4BD3002F5BA5 /* customsecondTableViewCell.m */,
+				E6D5C72E1E2A4BD3002F5BA5 /* customsecondTableViewCell.xib */,
+			);
+			name = customtableviewcell2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +325,8 @@
 				E69462C31E27AD820041F701 /* LaunchScreen.storyboard in Resources */,
 				E69462C01E27AD820041F701 /* Assets.xcassets in Resources */,
 				E69462BB1E27AD820041F701 /* Main.storyboard in Resources */,
+				E6D5C7301E2A4BD3002F5BA5 /* customsecondTableViewCell.xib in Resources */,
+				E6D5C7231E2A389C002F5BA5 /* customfirstTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,11 +351,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6D5C72F1E2A4BD3002F5BA5 /* customsecondTableViewCell.m in Sources */,
+				E6D5C7291E2A47F1002F5BA5 /* comments.m in Sources */,
 				E69462B51E27AD820041F701 /* AppDelegate.m in Sources */,
 				E69462E81E27ADBF0041F701 /* TableViewController1.m in Sources */,
-				E69462EB1E27AE400041F701 /* ViewController2.m in Sources */,
+				E6D5C7221E2A389C002F5BA5 /* customfirstTableViewCell.m in Sources */,
 				E69462EE1E27AE730041F701 /* issue.m in Sources */,
 				E69462B21E27AD820041F701 /* main.m in Sources */,
+				E6D5C7261E2A41AF002F5BA5 /* ViewController2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

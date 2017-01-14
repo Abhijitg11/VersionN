@@ -10,7 +10,7 @@
 
 @interface issue : NSObject
 
-@property(nonatomic,retain)NSString *title,*body,*login,*profile;
+@property(nonatomic,retain)NSString *title,*body,*commentsapi;
 
 
 
