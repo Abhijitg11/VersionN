@@ -49,10 +49,10 @@
             </objects>
             <point key="canvasLocation" x="767" y="441"/>
         </scene>
-        <!--View Controller2-->
+        <!--COMMENTS-->
         <scene sceneID="shV-5p-sn8">
             <objects>
-                <tableViewController id="Abi-Ic-GMa" customClass="ViewController2" sceneMemberID="viewController">
+                <tableViewController title="COMMENTS" id="Abi-Ic-GMa" customClass="ViewController2" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="1VR-fx-HUI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
