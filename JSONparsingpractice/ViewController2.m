@@ -7,6 +7,7 @@
 //
 
 #import "ViewController2.h"
+#import <AFNetworking.h>
 
 @interface ViewController2 ()
 
@@ -16,30 +17,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _arr2=[[NSMutableArray alloc]init];
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-    NSURL *url=[NSURL URLWithString:_tempstring];
-    NSMutableURLRequest *request=[NSMutableURLRequest requestWithURL:url];
-    NSURLSessionConfiguration *configuration=[NSURLSessionConfiguration defaultSessionConfiguration];
-    NSURLSession *session=[NSURLSession sessionWithConfiguration:configuration];
-    NSURLSessionDataTask *task=[session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        NSArray *outerarray=[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-        for(NSDictionary *dict in outerarray){
-            _c1=[[comments alloc]init];
-            _c1.commentbody=[dict objectForKey:@"body"];
-            NSDictionary *dict1=[dict objectForKey:@"user"];
-            _c1.commentauthor=[dict1 objectForKey:@"login"];
-
-            [_arr2 addObject:_c1];
-            
-        }
-        [self.tableView reloadData];
-        
-    }];
-    [task resume];
-    
 
     [self.tableView registerNib:[UINib nibWithNibName:@"customsecondTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
+
+    [_indicator startAnimating];
+    _arr2=[[NSMutableArray alloc]init];
+    _api = [[Apicalls alloc] init];
+    
+    [_api fetchIssueComments: _tempstring completion:^(NSObject* responseObject){
+        
+        [_indicator stopAnimating];
+        NSArray * responseArray=(NSArray *)responseObject;
+        for(comments *obj in responseArray){
+            
+            [_arr2 addObject:obj];
+        }
+        
+        [self.tableView reloadData];
+   
+    
+    }];
 
 
 }
@@ -70,10 +67,15 @@
      
     return cell;
 }
-
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    return UITableViewAutomaticDimension;
+    
+}
+-(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     return 300;
+    
     
     
 }

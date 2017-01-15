@@ -8,7 +8,7 @@
 
 #import "TableViewController1.h"
 #import "ViewController2.h"
-
+#import <AFNetworking.h>
 
 @interface TableViewController1 ()
 
@@ -18,33 +18,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-       _arr=[[NSMutableArray alloc]init];
-    NSString *str=@"https://api.github.com/repos/crashlytics/secureudid/issues";
-    NSURL *url=[NSURL URLWithString:str];
-    NSMutableURLRequest *request=[NSMutableURLRequest requestWithURL:url];
-    NSURLSessionConfiguration *configuration=[NSURLSessionConfiguration defaultSessionConfiguration];
-    NSURLSession *session=[NSURLSession sessionWithConfiguration:configuration];
-    NSURLSessionDataTask *task=[session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        
-        NSArray *outerarray=[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-        for (NSDictionary *dict in outerarray)
-        {
-            _i1=[[issue alloc]init];
-            _i1.title=[dict objectForKey:@"title"];
-            _i1.body=[dict objectForKey:@"body"];
-            _i1.commentsapi=[dict objectForKey:@"comments_url"];
-            
-            [_arr addObject:_i1];
-            
-            
-        }
-        [self.tableView reloadData];
-    }];
+   [self.tableView registerNib:[UINib nibWithNibName:@"customfirstTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
+    [self fetchIssue];
+}
 
-    [task resume];
+-(void) fetchIssue {
+    [_indicator startAnimating];
+    _api=[[Apicalls alloc]init];
+    _arr=[[NSMutableArray alloc]init];
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"customfirstTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
-    }
+    [_api fetchIssues:^(NSObject *responseObject,NSError *error){
+        [_indicator stopAnimating];
+        
+        if(error == nil){
+            NSArray * responseArray=(NSArray *)responseObject;
+            for(issue *obj in responseArray){
+                [_arr addObject:obj];
+            }
+            [self.tableView reloadData];
+
+        }else{
+            NSLog(@"data failed to fetch");
+        }
+    }];
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -67,8 +66,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     customfirstTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     issue *temp1=[_arr objectAtIndex:indexPath.row];
+    NSString *stringb=temp1.body;
+    if(stringb.length>140){
+        stringb=[stringb substringToIndex:141];
+        
+    }
     cell.issuetitlelbl.text=temp1.title;
-    cell.issuebodylbl.text=temp1.body;
+    cell.issuebodylbl.text=stringb;
     
     return cell;
 }
@@ -125,8 +129,16 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 300;
+    return UITableViewAutomaticDimension;
     
 }
+-(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 300;
+    
+    
+
+}
+
 
 @end

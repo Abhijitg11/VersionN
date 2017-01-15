@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D75220A187470F7E6640D9E /* libPods-JSONparsingpracticeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62DA9A0E35CF3F46BE1CA42F /* libPods-JSONparsingpracticeUITests.a */; };
+		2FF8B6C89D1F9F821C877E83 /* libPods-JSONparsingpracticeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC9711053EE2E31C932D9C1 /* libPods-JSONparsingpracticeTests.a */; };
+		4DC864071C10805C39AB49CB /* libPods-JSONparsingpractice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD955FCD143E8F9CC2114A66 /* libPods-JSONparsingpractice.a */; };
+		84218FF71E2B4B2300B906A8 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84218FF61E2B4B2300B906A8 /* libAFNetworking.a */; };
+		84218FFD1E2B6D8300B906A8 /* Apicalls.m in Sources */ = {isa = PBXBuildFile; fileRef = 84218FFC1E2B6D8300B906A8 /* Apicalls.m */; };
+		842190001E2B8D7100B906A8 /* ResponeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84218FFF1E2B8D7100B906A8 /* ResponeParser.m */; };
 		E69462B21E27AD820041F701 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E69462B11E27AD820041F701 /* main.m */; };
 		E69462B51E27AD820041F701 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E69462B41E27AD820041F701 /* AppDelegate.m */; };
 		E69462BB1E27AD820041F701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69462B91E27AD820041F701 /* Main.storyboard */; };
@@ -42,6 +48,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B6A858A25A6A17F872CC88D /* Pods-JSONparsingpracticeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONparsingpracticeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSONparsingpracticeUITests/Pods-JSONparsingpracticeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		21CDE155570B6F31F0EEA1A5 /* Pods-JSONparsingpractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONparsingpractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSONparsingpractice/Pods-JSONparsingpractice.debug.xcconfig"; sourceTree = "<group>"; };
+		504DAA518E9F1B54C878972D /* Pods-JSONparsingpracticeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONparsingpracticeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSONparsingpracticeTests/Pods-JSONparsingpracticeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		62DA9A0E35CF3F46BE1CA42F /* libPods-JSONparsingpracticeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JSONparsingpracticeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84218FF61E2B4B2300B906A8 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
+		84218FFB1E2B6D8200B906A8 /* Apicalls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Apicalls.h; sourceTree = "<group>"; };
+		84218FFC1E2B6D8300B906A8 /* Apicalls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Apicalls.m; sourceTree = "<group>"; };
+		84218FFE1E2B8D7100B906A8 /* ResponeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponeParser.h; sourceTree = "<group>"; };
+		84218FFF1E2B8D7100B906A8 /* ResponeParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponeParser.m; sourceTree = "<group>"; };
+		9AF02A2D68BE4875D97DB637 /* Pods-JSONparsingpracticeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONparsingpracticeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSONparsingpracticeTests/Pods-JSONparsingpracticeTests.release.xcconfig"; sourceTree = "<group>"; };
+		A1F4103278ED18D1B799184A /* Pods-JSONparsingpracticeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONparsingpracticeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSONparsingpracticeUITests/Pods-JSONparsingpracticeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BFC9711053EE2E31C932D9C1 /* libPods-JSONparsingpracticeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JSONparsingpracticeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3899AAFF05786F358324ADC /* Pods-JSONparsingpractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONparsingpractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSONparsingpractice/Pods-JSONparsingpractice.release.xcconfig"; sourceTree = "<group>"; };
+		DD955FCD143E8F9CC2114A66 /* libPods-JSONparsingpractice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JSONparsingpractice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E69462AD1E27AD810041F701 /* JSONparsingpractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONparsingpractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E69462B11E27AD820041F701 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E69462B31E27AD820041F701 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,6 +97,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84218FF71E2B4B2300B906A8 /* libAFNetworking.a in Frameworks */,
+				4DC864071C10805C39AB49CB /* libPods-JSONparsingpractice.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FF8B6C89D1F9F821C877E83 /* libPods-JSONparsingpracticeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,12 +114,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D75220A187470F7E6640D9E /* libPods-JSONparsingpracticeUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84218FF81E2B656800B906A8 /* Networkingcall */ = {
+			isa = PBXGroup;
+			children = (
+				84218FFB1E2B6D8200B906A8 /* Apicalls.h */,
+				84218FFC1E2B6D8300B906A8 /* Apicalls.m */,
+			);
+			name = Networkingcall;
+			sourceTree = "<group>";
+		};
+		842190011E2BA24900B906A8 /* parsingcall */ = {
+			isa = PBXGroup;
+			children = (
+				84218FFE1E2B8D7100B906A8 /* ResponeParser.h */,
+				84218FFF1E2B8D7100B906A8 /* ResponeParser.m */,
+			);
+			name = parsingcall;
+			sourceTree = "<group>";
+		};
+		AB5B0ADE5BB53D3AA6A8CC97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84218FF61E2B4B2300B906A8 /* libAFNetworking.a */,
+				DD955FCD143E8F9CC2114A66 /* libPods-JSONparsingpractice.a */,
+				BFC9711053EE2E31C932D9C1 /* libPods-JSONparsingpracticeTests.a */,
+				62DA9A0E35CF3F46BE1CA42F /* libPods-JSONparsingpracticeUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E69462A41E27AD810041F701 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +157,8 @@
 				E69462CC1E27AD820041F701 /* JSONparsingpracticeTests */,
 				E69462D71E27AD820041F701 /* JSONparsingpracticeUITests */,
 				E69462AE1E27AD810041F701 /* Products */,
+				F4D6ACCD6C9974916E596CE9 /* Pods */,
+				AB5B0ADE5BB53D3AA6A8CC97 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +177,8 @@
 			children = (
 				E69462B31E27AD820041F701 /* AppDelegate.h */,
 				E69462B41E27AD820041F701 /* AppDelegate.m */,
+				842190011E2BA24900B906A8 /* parsingcall */,
+				84218FF81E2B656800B906A8 /* Networkingcall */,
 				E6A8D7A41E29089600D72425 /* First Viewcontroller */,
 				E6A8D7A51E2908CB00D72425 /* Second view controller */,
 				E69462B91E27AD820041F701 /* Main.storyboard */,
@@ -219,6 +276,19 @@
 			name = customtableviewcell2;
 			sourceTree = "<group>";
 		};
+		F4D6ACCD6C9974916E596CE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21CDE155570B6F31F0EEA1A5 /* Pods-JSONparsingpractice.debug.xcconfig */,
+				D3899AAFF05786F358324ADC /* Pods-JSONparsingpractice.release.xcconfig */,
+				504DAA518E9F1B54C878972D /* Pods-JSONparsingpracticeTests.debug.xcconfig */,
+				9AF02A2D68BE4875D97DB637 /* Pods-JSONparsingpracticeTests.release.xcconfig */,
+				0B6A858A25A6A17F872CC88D /* Pods-JSONparsingpracticeUITests.debug.xcconfig */,
+				A1F4103278ED18D1B799184A /* Pods-JSONparsingpracticeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -226,9 +296,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E69462DD1E27AD820041F701 /* Build configuration list for PBXNativeTarget "JSONparsingpractice" */;
 			buildPhases = (
+				CFF420BC7D0E7751D58DC7CB /* [CP] Check Pods Manifest.lock */,
 				E69462A91E27AD810041F701 /* Sources */,
 				E69462AA1E27AD810041F701 /* Frameworks */,
 				E69462AB1E27AD810041F701 /* Resources */,
+				01E0AA939758B3F8EE2EAF86 /* [CP] Embed Pods Frameworks */,
+				31F645DC714E7F2741CF181D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,9 +316,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E69462E01E27AD820041F701 /* Build configuration list for PBXNativeTarget "JSONparsingpracticeTests" */;
 			buildPhases = (
+				AE9AC4917BE6B75EA9514E62 /* [CP] Check Pods Manifest.lock */,
 				E69462C51E27AD820041F701 /* Sources */,
 				E69462C61E27AD820041F701 /* Frameworks */,
 				E69462C71E27AD820041F701 /* Resources */,
+				95F610C632FB522DECD52FC9 /* [CP] Embed Pods Frameworks */,
+				411E70D4A88E0D152A6DC2A7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,9 +337,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E69462E31E27AD820041F701 /* Build configuration list for PBXNativeTarget "JSONparsingpracticeUITests" */;
 			buildPhases = (
+				673552A3934CD15C756655E0 /* [CP] Check Pods Manifest.lock */,
 				E69462D01E27AD820041F701 /* Sources */,
 				E69462D11E27AD820041F701 /* Frameworks */,
 				E69462D21E27AD820041F701 /* Resources */,
+				A7ADFB477DBB2AE9399B6BA5 /* [CP] Embed Pods Frameworks */,
+				2698D4FC8289D1D8C4343891 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -346,6 +425,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01E0AA939758B3F8EE2EAF86 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSONparsingpractice/Pods-JSONparsingpractice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2698D4FC8289D1D8C4343891 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSONparsingpracticeUITests/Pods-JSONparsingpracticeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31F645DC714E7F2741CF181D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSONparsingpractice/Pods-JSONparsingpractice-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		411E70D4A88E0D152A6DC2A7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSONparsingpracticeTests/Pods-JSONparsingpracticeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		673552A3934CD15C756655E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		95F610C632FB522DECD52FC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSONparsingpracticeTests/Pods-JSONparsingpracticeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7ADFB477DBB2AE9399B6BA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSONparsingpracticeUITests/Pods-JSONparsingpracticeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE9AC4917BE6B75EA9514E62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CFF420BC7D0E7751D58DC7CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E69462A91E27AD810041F701 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -354,11 +571,13 @@
 				E6D5C72F1E2A4BD3002F5BA5 /* customsecondTableViewCell.m in Sources */,
 				E6D5C7291E2A47F1002F5BA5 /* comments.m in Sources */,
 				E69462B51E27AD820041F701 /* AppDelegate.m in Sources */,
+				84218FFD1E2B6D8300B906A8 /* Apicalls.m in Sources */,
 				E69462E81E27ADBF0041F701 /* TableViewController1.m in Sources */,
 				E6D5C7221E2A389C002F5BA5 /* customfirstTableViewCell.m in Sources */,
 				E69462EE1E27AE730041F701 /* issue.m in Sources */,
 				E69462B21E27AD820041F701 /* main.m in Sources */,
 				E6D5C7261E2A41AF002F5BA5 /* ViewController2.m in Sources */,
+				842190001E2B8D7100B906A8 /* ResponeParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,10 +718,15 @@
 		};
 		E69462DE1E27AD820041F701 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21CDE155570B6F31F0EEA1A5 /* Pods-JSONparsingpractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JSONparsingpractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AFNetworking",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Felix-ITs-Akshay.JSONparsingpractice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -510,10 +734,15 @@
 		};
 		E69462DF1E27AD820041F701 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3899AAFF05786F358324ADC /* Pods-JSONparsingpractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JSONparsingpractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AFNetworking/**",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Felix-ITs-Akshay.JSONparsingpractice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -521,6 +750,7 @@
 		};
 		E69462E11E27AD820041F701 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 504DAA518E9F1B54C878972D /* Pods-JSONparsingpracticeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = JSONparsingpracticeTests/Info.plist;
@@ -533,6 +763,7 @@
 		};
 		E69462E21E27AD820041F701 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AF02A2D68BE4875D97DB637 /* Pods-JSONparsingpracticeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = JSONparsingpracticeTests/Info.plist;
@@ -545,6 +776,7 @@
 		};
 		E69462E41E27AD820041F701 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B6A858A25A6A17F872CC88D /* Pods-JSONparsingpracticeUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = JSONparsingpracticeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -556,6 +788,7 @@
 		};
 		E69462E51E27AD820041F701 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1F4103278ED18D1B799184A /* Pods-JSONparsingpracticeUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = JSONparsingpracticeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
